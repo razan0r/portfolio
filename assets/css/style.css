@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;700;800&display=swap');
+/*font-family: 'Dosis', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;800;900&display=swap');
+
+/*font-family: 'Raleway', sans-serif;*/
+:root {
+    --main-color: rgb(255, 114, 76);
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Dosis', sans-serif;
+
+}
+
+
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.bg-main-color {
+    background-color: var(--main-color);
+}
+
+.text-main-color {
+    color: var(--main-color);
+}
+
+.border-main-color {
+    border-color: var(--main-color) !important;
+}
+
+.buttn i {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.buttn:hover i {
+    transform: rotate(360deg);
+    color: white !important;
+    background-color: #333333 !important;
+}
+
+.navbar .nav-link {
+    padding-block: 10px;
+    position: relative;
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--main-color);
+    transition: .5s;
+}
+
+.navbar .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+/*start header*/
+header {
+    background-image: url(../img/introbg5.png);
+    background-size: cover;
+    background-position-y: -60px;
+    background-repeat: no-repeat;
+
+}
+
+.header p,
+.header span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+}
+
+.header h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.header .icons i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 50%;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.header .icons i:hover {
+    transform: rotate(360deg);
+}
+
+.header .icons i:nth-of-type(1) {
+    color: #3b5999;
+    border-color: #3b5999;
+}
+
+.header .icons i:nth-of-type(1):hover {
+    background-color: #3b5999;
+    color: white;
+}
+
+.header .icons i:nth-of-type(2) {
+    color: #ea4c89;
+    border-color: #ea4c89;
+}
+
+.header .icons i:nth-of-type(2):hover {
+    background-color: #ea4c89;
+    color: white;
+}
+
+.header .icons i:nth-of-type(3) {
+    color: #1769ff;
+    border-color: #1769ff;
+}
+
+.header .icons i:nth-of-type(3):hover {
+    background-color: #1769ff;
+    color: white;
+}
+
+.header .icons i:nth-of-type(4) {
+    color: #0077b5;
+    border-color: #0077b5;
+}
+
+.header .icons i:nth-of-type(4):hover {
+    background-color: #0077b5;
+    color: white;
+}
+
+.header .icons i:nth-of-type(5) {
+    color: #dd4b39;
+    border-color: #dd4b39;
+}
+
+.header .icons i:nth-of-type(5):hover {
+    background-color: #dd4b39;
+    color: white;
+}
+
+.header-content p {
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #3333;
+    animation: typing 3.5s infinite alternate-reverse steps(29), blink infinite .7s;
+    -webkit-animation: typing 3.5s infinite alternate-reverse steps(29), blink infinite .7s;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 355px;
+    }
+}
+
+/* 333px*/
+@keyframes blink {
+    from {
+        border-color: #333333cb;
+    }
+
+    to {
+        border-color: #33333300;
+
+    }
+}
+
+/*start about*/
+.about .numbers p,
+.about p,
+h2 {
+    color: #f3f3f3;
+}
+
+.title {
+    color: #f3f3f3;
+
+}
+
+.about .numbers {
+    background-color: #4e4e4e !important;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about .numbers span {
+    font-size: 26px;
+}
+
+.about a span {
+    color: #3b3b3b;
+}
+
+.title h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.custom-btn:hover i {
+    color: var(--main-color) !important;
+}
+
+.about .container>.row {
+    width: 90%;
+    margin: auto !important;
+}
+
+/* start services*/
+.services .service-item h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #3b3b3b;
+}
+
+.services .title span {
+    color: #818181;
+}
+
+.services .title h2 {
+    color: #3b3b3b;
+}
+
+.services .service-item {
+    position: relative;
+}
+
+.services .service-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f3f3f3;
+    z-index: -1;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    height: 0;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.services .service-item:hover::after {
+    height: 100%;
+}
+
+.service-item p {
+    font-style: 14px;
+    color: #818181;
+}
+
+.service-item h3 {
+    font-style: 20px;
+
+}
+
+/* start portfolio */
+.portfolio .title span {
+    color: #818181;
+}
+
+.portfolio .title h2 {
+    color: #3b3b3b;
+}
+
+.portfolio {
+    background-color: #f3f3f3;
+}
+
+.portfolio .nav-link {
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    color: #5f5f5f;
+    border-color: #5f5f5f;
+}
+
+.portfolio .nav-link.active {
+    background-color: var(--main-color);
+    border: none !important;
+    color: white !important;
+}
+
+.overlay {
+    background-color: rgb(59, 59, 59, .25);
+    transform: scaley(0);
+    -webkit-transform: scaley(0);
+    -moz-transform: scaley(0);
+    -ms-transform: scaley(0);
+    -o-transform: scaley(0);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.project-card:hover .overlay {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+
+.overlay i {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: .5s .1s;
+    -webkit-transition: .5s .1s;
+    -moz-transition: .5s .1s;
+    -ms-transition: .5s .1s;
+    -o-transition: .5s .1s;
+    cursor: pointer;
+}
+
+.project-card:hover .overlay i {
+    transform: scale(1) rotate(360deg);
+    -webkit-transform: scale(1) rotate(360deg);
+    -moz-transform: scale(1) rotate(360deg);
+    -ms-transform: scale(1) rotate(360deg);
+    -o-transform: scale(1) rotate(360deg);
+}
+
+.overlay i:hover {
+    background-color: transparent;
+    border: 1px solid white !important;
+    color: var(--main-color) !important;
+}
+
+.project-card .info {
+    bottom: 40px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    opacity: 0;
+}
+
+.project-card:hover .info {
+    bottom: 0;
+    opacity: 1;
+}
+
+.portfolio .row p {
+    font-size: 15px;
+    color: #4c4c4c;
+}
+
+/* start resume*/
+.resume .desc h4 span {
+    font-weight: 400;
+    color: #3b3b3b;
+}
+
+.resume .title span {
+    color: #818181;
+}
+
+.resume .title h2 {
+    color: #3b3b3b;
+}
+
+.resume .head i {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.resume .head:hover i {
+    background-color: #f3f3f3;
+    color: var(--main-color) !important;
+}
+
+.resume .head {
+    position: relative;
+}
+
+.resume .item {
+    position: relative;
+}
+
+.resume .head::before,
+.resume .item:not(:last-of-type)::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 18px;
+    width: 1px;
+    height: 100%;
+    background-color: #333;
+    z-index: -1;
+}
+
+.resume .item:not(.item.special):after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid var(--main-color);
+}
+
+.resume .item:hover::after {
+    background-color: var(--main-color);
+
+}
+
+.resume .item:not(.item.special):hover::after {
+    background-color: var(--main-color);
+
+}
+
+.bar {
+    height: 3px;
+    background-color: black;
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.bar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 3px;
+    background-color: var(--main-color);
+    width: 80%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.item[percentage="80%"] h4 {
+    width: 80%;
+}
+
+.item[percentage="70%"] h4 {
+    width: 70%;
+}
+
+.item[percentage="70%"] .bar::after {
+    width: 70%;
+}
+
+.item[percentage="55%"] h4 {
+    width: 55%;
+}
+
+.item[percentage="55%"] .bar::after {
+    width: 55%;
+}
+
+.resume p {
+    font-size: 15px;
+    color: #3b3b3b;
+}
+
+/*start download resume*/
+.download-resume {
+    background: linear-gradient(rgb(59, 59, 59, 0.75), rgb(59, 59, 59, 0.75)), url(../img/brandbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.download-resume p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 32px;
+}
+
+.download-resume a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -ms-transition: background-color .5s;
+    -o-transition: background-color .5s;
+}
+
+.download-resume a:hover {
+    background-color: var(--main-color);
+
+}
+
+/* start testimonal*/
+.testimonials h3 {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.testimonials .title span {
+    color: #818181;
+}
+
+.testimonials .title h2 {
+    color: #3b3b3b;
+}
+
+.testimonials .qoute span {
+    color: #5b5b5b;
+    font-size: 14px;
+}
+
+.testimonials .qoute i {
+    font-size: 20px;
+}
+
+.testimonials .qoute:hover {
+    background-color: #5b5b5b;
+    color: white;
+}
+
+.testimonials .qoute:hover span {
+    color: white;
+
+}
+
+.carousel-indicators {
+    bottom: -100px
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid var(--main-color);
+}
+
+.carousel-indicators .active {
+    background-color: var(--main-color);
+}
+
+
+/*start contact*/
+.contact .title span {
+    color: #f3f3f3;
+
+}
+
+.contact {
+    background: linear-gradient(rgb(255, 114, 76, 0.85), rgb(255, 114, 76, 0.85)), url(../img/contactbg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border: 1px solid white !important;
+    box-shadow: none;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: white;
+}
+
+/* start map */
+.contact-info .container {
+    background-color: #282828;
+}
+
+.contact-info i {
+    color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    background-color: #f3f3f3;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s transform, .4s color;
+    -webkit-transition: .4s transform, .4s color;
+    -moz-transition: .4s transform, .4s color;
+    -ms-transition: .4s transform, .4s color;
+    -o-transition: .4s transform, .4s color;
+}
+
+.contact-info i:hover {
+    transform: rotate(360deg);
+    color: white;
+    background-color: var(--main-color);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+/*start footer*/
+
+footer p {
+    font-family: 'Raleway', sans-serif;
+    color: #818181;
+}

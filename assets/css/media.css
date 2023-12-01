@@ -1,0 +1,37 @@
+@media (max-width:991px) {
+    .nav-item {
+        width: fit-content;
+    }
+}
+
+@media (max-width:768px) {
+    .about .counts {
+        border: none !important;
+    }
+
+    .download-resume .brands {
+        justify-content: center !important;
+    }
+
+    .download-resume .download {
+        text-align: center ;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 568px) {
+    header {
+        background-position-x: -235px;
+    }
+
+    header .header-content {
+        align-items: start !important;
+    }
+
+    h1 {
+        font-size: 45px !important;
+    }
+    .contact p, .contact form{
+        width: 100% !important;
+    }
+}
